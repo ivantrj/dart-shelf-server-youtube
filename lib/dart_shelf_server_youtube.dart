@@ -8,8 +8,8 @@ import 'package:shelf_router/shelf_router.dart';
 // Configure routes.
 final _router = Router()
   ..get('/', _rootHandler)
-  ..get('/rcu', _catHandler)
-  ..get('/campaign', _personHandler);
+  ..get('/cats', _catHandler)
+  ..get('/people', _personHandler);
 
 Response _rootHandler(Request req) {
   return Response.ok('Hello, World!\n');
